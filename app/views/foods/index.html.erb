@@ -1,0 +1,14 @@
+<% @foods.each do |food| %>
+  <div class='gtin-upc'>
+    <p>Gtin/Up: <%= food[:gtinUpc] %></p>
+  </div>
+  <div class='description'>
+    <p>Description: <%= food[:description] %></p>
+  </div>
+  <div class='brand-owner'>
+    <p>Brand Owner: <%= food[:brandOwner] %></p>
+  </div>
+  <div class='ingredients'>
+    <p>Ingredients: <%= food[:ingredients] %></p>
+  </div>
+<% end %>
