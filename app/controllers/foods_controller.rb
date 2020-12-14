@@ -1,6 +1,7 @@
 class FoodsController < ApplicationController
   def index
     search_response = get_json("/fdc/v1/foods/search?query=#{params[:q]}")
+    @total_count = search_response[:totalHits]
     @foods = search_response[:foods].first(10)
   end
 

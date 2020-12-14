@@ -1,6 +1,6 @@
 class FoodService
   def self.search_for_food(keyword)
-    get_json("/fdc/v1/foods/search?query=#{keyword}")[:foods]
+    get_json("/fdc/v1/foods/search?query=#{keyword}")
   end
 
   module Connectable
